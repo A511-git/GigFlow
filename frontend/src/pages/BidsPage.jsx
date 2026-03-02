@@ -36,10 +36,10 @@ export default function BidsPage() {
         setError("");
 
         try {
-            const res = await gigsService.fetchOpenGigs({ page: 1, limit: 50 });
-            const result = res?.data;
+            const res = await gigsService.fetchAuthGigs();
+            const result = res?.data;           
 
-            setGigs(result?.data || []);
+            setGigs(result || []);
         } catch (err) {
             setError(handleApiError(err, "Failed to fetch gigs"));
         } finally {

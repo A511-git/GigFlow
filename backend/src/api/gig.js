@@ -35,5 +35,10 @@ export const gig = () => {
         res.status(200).json(new ApiResponse(200, result, "Gig updated"));
     }));
 
+    router.get("/auth/", UserAuth, AsyncHandler(async (req, res) => {
+        const result = await gigService.find({clientId: req.user._id});
+        res.status(200).json(new ApiResponse(200, result, "Gig fetched"));
+    }));
+
     return router;
 };

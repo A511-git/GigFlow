@@ -9,5 +9,9 @@ export const gigsService = {
     async createGig(payload) {
         const res = await api.post("/api/gigs", payload);
         return res.data;
+    },
+    async fetchAuthGigs(userId) {
+        const res = await api.get(`/api/gigs/auth`);
+        return res.data;
     }
 }

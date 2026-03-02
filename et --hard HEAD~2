@@ -1,0 +1,11 @@
+[33m84d259d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Refactor gig fetching to use authenticated user context and update service methods
+[33m90b6442[m Implement user-specific gig fetching and add authentication to gig routes
+[33m238f3a9[m add sample environment files for backend and frontend
+[33m74ed55f[m .
+[33m20d46c7[m Update Dockerfile to use 'npm i' instead of 'npm ci' for dependency installation
+[33m25fba85[m Refactor CORS configuration to include FRONTEND_URL and improve origin handling
+[33m693e2ed[m complete
+[33m44520f2[m backend completd
+[33m701f4cf[m Implement pagination for Bid, Gig, and User models; remove address validation and update base schema
+[33me7ba17e[m Add Bid and Gig models with corresponding repositories
+[33mf288a04[m base user module completed
